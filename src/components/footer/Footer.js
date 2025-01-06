@@ -15,7 +15,7 @@ export default function Footer() {
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
           
           <a
-            href=""
+            href="telachristopher4@gmail.com"
             target="_blank"
             rel="noreferrer"
           >
