@@ -1,6 +1,6 @@
 {
-  "homepage": "https://chris-tela.io/developerFolio/",
-  "name": "developerfolio",
+  "homepage": "developerFolio/",
+  "name": "personal-website-project",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
