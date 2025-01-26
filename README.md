@@ -21,5 +21,3 @@ This site serves as a hub for showcasing my skills, experiences, and education. 
 **Tools used**:
 
 Website was created using React, HTML/CSS, and GraphQL
-
-[Check it out!](https://www.christophertela.com)
