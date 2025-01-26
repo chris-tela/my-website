@@ -22,4 +22,4 @@ This site serves as a hub for showcasing my skills, experiences, and education. 
 
 Website was created using React, HTML/CSS, and GraphQL
 
-[Check it out!](christophertela.com)
+[Check it out!](https://www.christophertela.com)
