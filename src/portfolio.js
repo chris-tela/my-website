@@ -26,7 +26,7 @@ const greeting = {
     "I'm a passionate Full Stack Software Developer 🚀, who is looking forward to dive into the depths of the tech world! I'm currently interested in software development, AI/Machine Learning, Cybersecurity, & Data Analytics!"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1IgxD77P4RZgc8mG9fkAdcxZjGNKIAwLF/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1W_3Gd42noQ0kJhri8xoTtSRUm7-PtsMp/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -34,7 +34,7 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/chris-tela",
-  linkedin: "https://www.linkedin.com/in/chris-tela-bb33a0278/",
+  linkedin: "https://www.linkedin.com/in/christopher-tela-bb33a0278/",
   gmail: "telachristopher4@gmail.com",
   display: true // Set true to display this section, defaults to false
 };
@@ -48,14 +48,15 @@ const skillsSection = {
     emoji(
       "⚡ Developing full-scale solutions for real-world problems"
     ),
-    emoji("⚡ Proficient in React, Node.js, FastAPI, MongoDB, Numpy, Pandas, and Matplotlib"),
+    emoji("⚡ Proficient in Python, Java, C/C++, SQL, JavaScript, React, Node.js, Numpy, Pandas, and Matplotlib"),
     emoji(
-      "⚡ Experienced in debugging, testing, and deploying full-stack applications to ensure reliability and usability"
+      "⚡ Experienced in developing full-stack applications using in-demand languages, as well as integrating third-party APIs"
+    ),
+    emoji(
+      "⚡ Strong foundation in statistical analysis, hypothesis testing, and data visualization to support data-driven decision-making"
     )
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
