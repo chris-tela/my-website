@@ -26,8 +26,7 @@ const greeting = {
     "I'm a passionate full-stack Software Developer 🚀, who is currently diving into the depths of the tech world! I'm currently interested in software development, AI/Machine Learning, Cybersecurity, & Data Analytics!"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1tJECy7j2JGC5eVRkAPwcyPIhqOuWEhC-/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "https://drive.google.com/file/d/1tJECy7j2JGC5eVRkAPwcyPIhqOuWEhC-/view?usp=sharing",
 };
 
 // Social Media Links
