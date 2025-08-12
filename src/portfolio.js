@@ -23,10 +23,10 @@ const greeting = {
   username: "Christopher Tela",
   title: "Hello World, I'm Chris!",
   subTitle: emoji(
-    "I'm a passionate Full Stack Software Developer 🚀, who is looking forward to dive into the depths of the tech world! I'm currently interested in software development, AI/Machine Learning, Cybersecurity, & Data Analytics!"
+    "I'm a passionate full-stack Software Developer 🚀, who is currently diving into the depths of the tech world! I'm currently interested in software development, AI/Machine Learning, Cybersecurity, & Data Analytics!"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1W_3Gd42noQ0kJhri8xoTtSRUm7-PtsMp/view?usp=drive_link", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1tJECy7j2JGC5eVRkAPwcyPIhqOuWEhC-/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -141,11 +141,23 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Software Developer & Test",
+      company: "Trojan Technologies",
+      companylogo: require("./assets/images/trojantechnologies.png"),
+      date: "April 2025 – Present",
+      desc: "Working on creating innovative software solutions to improve the efficiency of the company's products with a focus on automation and internal software testing tools",
+      descBullets: [
+        "Developed a custom automation tool using C# and WPF to streamline the product testing process, encouraging automation of testing tasks",
+        "Optimized CI/CD workflows using Jenkins to include build verification and test coverage tracking, reducing regression issues and deployment downtime",
+        "Implemented and debugged Modbus RTU communication protocols (RS-232/RS-485) for reliable hardware-software interfacing"
+      ]
+    },
+    {
       role: "Full-Stack Developer",
       company: "Western Developer's Society",
       companylogo: require("./assets/images/western_dev_society_logo.jpg"),
-      date: "September 2024 – Present",
-      desc: "Working on a Council Management project, where we are developing a application to automate speaking order, attendance tracking, and voting processes to increase meeting efficiency",
+      date: "September 2024 – April 2025",
+      desc: "Worked on a Council Management project, where we are developing a application to automate speaking order, attendance tracking, and voting processes to increase meeting efficiency",
       descBullets: [
         "Collaborated with a team to design and implement a full-stack solution using React Native, Express, Node.js, SQL, and JavaScript",
         "Integrated a dynamic backend with a complete database to ensure secure and efficient handling of attendance, voting data, and speaking order"
@@ -154,11 +166,11 @@ const workExperiences = {
     {
       role: "Back-End Developer",
       company: "Western Tech for Social Impact",
-      companylogo: require("./assets/images/western_tech.gif"),
-      date: "September 2024 – Present",
-      desc: "Working on a Social Service Accessiblity application, enabling easy access to various social services such as food bank, homeless shelters, etc.",
+      companylogo: require("./assets/images/techforsocialimpact_logo.jpg"),
+      date: "September 2024 – April 2025",
+      desc: "Worked on a Social Service Accessiblity application, enabling easy access to various social services such as food bank, homeless shelters, etc.",
       descBullets: [
-        "Integrated third-party APIs for real-time data updates, including service hours, capacity, and emergency alerts, improving the app’s ability to serve users in critical need",
+        "Integrated third-party APIs for real-time data updates, including service hours, capacity, and emergency alerts, improving the app's ability to serve users in critical need",
         "Created and maintained database schemas using PostgreSQL to store information on social services, including locations, contact details, and operational hours"
       ]
     }

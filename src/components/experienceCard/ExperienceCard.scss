@@ -91,6 +91,13 @@
   border-radius: 50%;
 }
 
+/* Trojan Technologies logo specific styling - shows full logo */
+.trojan-tech-logo {
+  object-fit: contain;
+  transform: scale(1.00);
+  border-radius: 0;
+}
+
 .experience-text-role {
   text-align: center;
   color: $textColor;
