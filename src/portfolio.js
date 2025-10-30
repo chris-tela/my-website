@@ -112,7 +112,7 @@ const educationInfo = {
       schoolName: "Western University",
       logo: require("./assets/images/western_university.png"),
       subHeader: "Bachelor's of Science, Specialization in Computer Science",
-      duration: "September 2023 - ",
+      duration: "September 2023 - August 2027",
       desc: "Relevant Courses:",
       descBullets: [
         "COMPSCI 2210: DATA STRUCTURES & ALGORITHMS",
@@ -192,9 +192,9 @@ const bigProjects = {
   subtitle: "SOME OF THE PROJECTS THAT I CREATED",
   projects: [
     {
-      //image: require("./assets/images/saayaHealthLogo.webp"),
+      image: require("./assets/images/nhlwordle.png"),
       projectName: "NHL Wordle",
-      projectDesc: "A player guessing game where you make guesses on the mystery player based on information from previous guessess",
+      projectDesc: "A player guessing game where you make guesses on the mystery player based on information from previous guesses. The game is built using Python as the backend, FastAPI as the API framework, and React as the frontend.",
       footerLink: [
         {
           name: "Visit Github",
@@ -204,18 +204,29 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //image: require("./assets/images/nextuLogo.web"),
+      projectName: "Credit Card Fraud Detector",
+      projectDesc: "A credit card fraud detector that uses machine learning to detect fraudulent transactions. The model is built using Python and Scikit-learn & has achieved a accuracy of 96%. ",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Visit Github",
+          url: "https://github.com/chris-tela/creditcard-fraud"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/nuzlocke.jpg"),
+      projectName: "Pokemon Nuzlocke Tracker",
+      projectDesc: "A web application that allows you to track your Pokemon Nuzlocke journey. The application is built using Python as the backend, PostgreSQL & SQLite as the database, and React as the frontend. This project is still being built and will eventually be deployed!",
+      footerLink: [
+        {
+          name: "Visit Github",
+          url: "https://github.com/chris-tela/nuzlocke-tracker"
         }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
