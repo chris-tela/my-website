@@ -10,6 +10,7 @@ import Education from './components/Education';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import LoadingScreen from './components/LoadingScreen';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -61,6 +62,7 @@ function App() {
               <Contact />
             </main>
             <Footer />
+            <Analytics />
           </motion.div>
         )}
       </AnimatePresence>
