@@ -2,8 +2,14 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FiGithub, FiExternalLink, FiFolder } from 'react-icons/fi';
-import { FaPython, FaReact, FaDatabase, FaJava } from 'react-icons/fa';
-import { SiTypescript, SiPostgresql, SiScikitlearn, SiFastapi } from 'react-icons/si';
+import { FaPython, FaReact, FaDatabase, FaJava, FaRobot } from 'react-icons/fa';
+import {
+  SiTypescript, SiPostgresql, SiScikitlearn, SiFastapi, SiNextdotjs,
+  SiTailwindcss
+} from 'react-icons/si';
+import nuzlockeImg from '../assets/images/nuzlocke.jpg';
+import nhlWordleImg from '../assets/images/nhlwordle.png';
+import carelinkImg from '../assets/images/carelink.png';
 
 const Projects = () => {
   const [ref, inView] = useInView({
@@ -17,7 +23,7 @@ const Projects = () => {
     {
       title: 'Pokemon Nuzlocke Tracker',
       description: 'A comprehensive web application for tracking Pokemon Nuzlocke challenge runs. Features include team management, encounter logging, and progress visualization.',
-      image: '/nuzlocke.jpg',
+      image: nuzlockeImg,
       tags: ['TypeScript', 'React', 'PostgreSQL', 'Python'],
       tech: [SiTypescript, FaReact, SiPostgresql, FaPython],
       github: 'https://github.com/chris-tela/nuzlocke-tracker',
@@ -27,7 +33,7 @@ const Projects = () => {
     {
       title: 'NHL Wordle',
       description: 'An interactive player guessing game inspired by Wordle. Players guess NHL players based on attributes revealed from previous guesses.',
-      image: '/nhlwordle.png',
+      image: nhlWordleImg,
       tags: ['Python', 'FastAPI', 'React', 'REST API'],
       tech: [FaPython, SiFastapi, FaReact],
       github: 'https://github.com/chris-tela/nhlapi',
@@ -45,25 +51,14 @@ const Projects = () => {
       featured: true,
     },
     {
-      title: 'Frog Path Finder',
-      description: 'Implementation of pathfinding algorithms to help a frog navigate through various obstacles to reach its destination efficiently.',
-      image: null,
-      tags: ['Java', 'Algorithms', 'Data Structures'],
-      tech: [FaJava],
-      github: 'https://github.com/chris-tela/Frog-Path-',
-      category: 'algorithms',
-      featured: false,
-    },
-    {
-      title: 'BST Dictionary with Media',
-      description: 'A Binary Search Tree implementation supporting multimedia dictionary entries with efficient search and retrieval operations.',
-      image: null,
-      tags: ['Java', 'Data Structures', 'OOP'],
-      tech: [FaJava, FaDatabase],
-      github: 'https://github.com/chris-tela/BSTDictionary-with-MediaSupport',
-      category: 'algorithms',
-      featured: false,
-    },
+      title: 'CareLink',
+      description: 'A application for managing healthcare coordination in remote Canadian areas. 2nd place at the 2025 Spark x Western Developer\'s Society Hackathon.',
+      image: carelinkImg,
+      tags: ["Next.js", "Tailwind", "TypeScript", "React", "CouchDB", "IndexedDB", "Groq API"],
+      tech: [SiNextdotjs, SiTailwindcss, SiTypescript, FaReact, FaDatabase, FaDatabase, FaRobot],
+      category: 'fullstack',
+      featured: true,
+    }
   ];
 
   const filters = [
@@ -172,9 +167,18 @@ const Projects = () => {
                         </span>
                       </div>
                     )}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <FiFolder className="w-16 h-16 text-primary-500/50 group-hover:scale-110 transition-transform" />
-                    </div>
+                    {project.image ? (
+                      <img
+                        src={project.image}
+                        alt={`${project.title} screenshot`}
+                        className="absolute inset-0 h-full w-full object-cover"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <FiFolder className="w-16 h-16 text-primary-500/50 group-hover:scale-110 transition-transform" />
+                      </div>
+                    )}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
 

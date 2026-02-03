@@ -2,11 +2,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import {
-  FaReact, FaNodeJs, FaPython, FaJava, FaDatabase, FaGitAlt, FaHtml5, FaCss3Alt, FaDocker
+  FaReact, FaNodeJs, FaPython, FaJava, FaDatabase, FaGitAlt, FaHtml5, FaCss3Alt, FaDocker,
+  FaChartLine, FaChartBar
 } from 'react-icons/fa';
 import {
   SiJavascript, SiTypescript, SiPostgresql, SiMongodb, SiTailwindcss,
-  SiPandas, SiNumpy, SiScikitlearn, SiCplusplus, SiExpress
+  SiPandas, SiNumpy, SiScikitlearn, SiCplusplus, SiExpress,
+  SiGooglecloud, SiJenkins, SiPostman, SiFastapi, SiFlask
 } from 'react-icons/si';
 
 const Skills = () => {
@@ -24,6 +26,7 @@ const Skills = () => {
         { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
         { name: 'Java', icon: FaJava, color: '#ED8B00' },
         { name: 'C/C++', icon: SiCplusplus, color: '#00599C' },
+        { name: 'C#', icon: SiCplusplus, color: '#512BD4' },
       ],
     },
     {
@@ -51,6 +54,7 @@ const Skills = () => {
         { name: 'Pandas', icon: SiPandas, color: '#150458' },
         { name: 'NumPy', icon: SiNumpy, color: '#013243' },
         { name: 'Scikit-learn', icon: SiScikitlearn, color: '#F7931E' },
+        { name: 'Matplotlib', icon: FaChartLine, color: '#11557C' },
       ],
     },
     {
@@ -58,6 +62,12 @@ const Skills = () => {
       skills: [
         { name: 'Git', icon: FaGitAlt, color: '#F05032' },
         { name: 'Docker', icon: FaDocker, color: '#2496ED' },
+        { name: 'Google Cloud', icon: SiGooglecloud, color: '#4285F4' },
+        { name: 'Power BI', icon: FaChartBar, color: '#F2C811' },
+        { name: 'Jenkins', icon: SiJenkins, color: '#D24939' },
+        { name: 'Postman', icon: SiPostman, color: '#FF6C37' },
+        { name: 'FastAPI', icon: SiFastapi, color: '#009688' },
+        { name: 'Flask', icon: SiFlask, color: '#000000' },
       ],
     },
   ];
@@ -149,9 +159,8 @@ const Skills = () => {
         >
           {[
             { number: '10+', label: 'Technologies' },
-            { number: '5+', label: 'Projects Built' },
             { number: '3+', label: 'Work Experiences' },
-            { number: '4th', label: 'Year CS Student' },
+            { number: '3rd', label: 'Year CS Student' },
           ].map((stat, index) => (
             <motion.div
               key={stat.label}

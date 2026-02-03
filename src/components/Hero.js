@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
-import { FiGithub, FiLinkedin, FiMail, FiDownload, FiChevronDown } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiMail, FiDownload } from 'react-icons/fi';
 
 const Hero = () => {
   const socialLinks = [
@@ -147,22 +147,6 @@ const Hero = () => {
         </motion.div>
 
         {/* Scroll Indicator */}
-        <motion.div
-          className="absolute bottom-10 left-1/2 -translate-x-1/2"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1 }}
-        >
-          <motion.a
-            href="#about"
-            className="flex flex-col items-center gap-2 text-gray-400 hover:text-primary-500 transition-colors"
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          >
-            <span className="text-sm">Scroll Down</span>
-            <FiChevronDown size={24} />
-          </motion.a>
-        </motion.div>
       </div>
     </section>
   );

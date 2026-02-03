@@ -2,6 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FiBriefcase, FiCalendar, FiMapPin } from 'react-icons/fi';
+import trojanLogo from '../assets/images/trojantechnologies.png';
+import wdsLogo from '../assets/images/western_dev_society_logo.jpg';
+import techForSocialImpactLogo from '../assets/images/techforsocialimpact_logo.jpg';
 
 const Experience = () => {
   const [ref, inView] = useInView({
@@ -16,6 +19,7 @@ const Experience = () => {
       location: 'London, ON',
       date: 'April 2025 - Present',
       description: 'Creating innovative software solutions focused on automation and internal software testing tools.',
+      logo: trojanLogo,
       highlights: [
         'Developed custom automation tool using C# and WPF to streamline product testing process',
         'Optimized CI/CD workflows using Jenkins for build verification and test coverage tracking',
@@ -29,6 +33,7 @@ const Experience = () => {
       location: 'London, ON',
       date: 'September 2024 - April 2025',
       description: 'Developed a Council Management application to automate meeting processes.',
+      logo: wdsLogo,
       highlights: [
         'Designed and implemented full-stack solution using React Native, Express, Node.js, and SQL',
         'Integrated dynamic backend with complete database for secure data handling',
@@ -42,6 +47,7 @@ const Experience = () => {
       location: 'London, ON',
       date: 'September 2024 - April 2025',
       description: 'Built a Social Service Accessibility application for accessing vital community resources.',
+      logo: techForSocialImpactLogo,
       highlights: [
         'Integrated third-party APIs for real-time data updates on service hours and capacity',
         'Created and maintained PostgreSQL database schemas for social services information',
@@ -128,8 +134,17 @@ const Experience = () => {
               >
                 <div className={`flex items-start gap-4 ${index % 2 === 0 ? 'md:flex-row-reverse md:text-left' : ''}`}>
                   {/* Company Icon */}
-                  <div className={`p-3 rounded-xl bg-gradient-to-r ${exp.color} shrink-0`}>
-                    <FiBriefcase className="w-6 h-6 text-white" />
+                  <div className="shrink-0 w-12 h-12 flex items-center justify-center">
+                    {exp.logo ? (
+                      <img
+                        src={exp.logo}
+                        alt={`${exp.company} logo`}
+                        className="w-10 h-10 object-contain drop-shadow-sm"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <FiBriefcase className="w-6 h-6 text-white" />
+                    )}
                   </div>
 
                   <div className="flex-1">

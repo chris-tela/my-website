@@ -13,7 +13,7 @@ const About = () => {
     { icon: FiMapPin, label: 'Location', value: 'Toronto, Ontario' },
     { icon: FiCode, label: 'Focus', value: 'Full-Stack Development' },
     { icon: FiTarget, label: 'Goal', value: 'Innovative Solutions' },
-    { icon: FiCoffee, label: 'Fuel', value: 'Coffee & Curiosity' },
+    { icon: FiCoffee, label: 'Fuel', value: 'White Monsters & Curiosity' },
   ];
 
   const containerVariants = {
