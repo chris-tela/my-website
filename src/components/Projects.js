@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FiGithub, FiExternalLink, FiFolder } from 'react-icons/fi';
-import { FaPython, FaReact, FaDatabase, FaJava, FaRobot } from 'react-icons/fa';
+import { FaPython, FaReact, FaDatabase, FaRobot } from 'react-icons/fa';
 import {
   SiTypescript, SiPostgresql, SiScikitlearn, SiFastapi, SiNextdotjs,
   SiTailwindcss
