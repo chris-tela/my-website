@@ -95,24 +95,6 @@ const About = () => {
               <span className="gradient-text">One Line at a Time</span>
             </h3>
 
-            <div className="space-y-4 text-gray-600 dark:text-gray-400 mb-8">
-              <p>
-                I'm a passionate full-stack developer and Computer Science student at
-                Western University, driven by the desire to create innovative software
-                solutions that make a real impact.
-              </p>
-              <p>
-                My journey in tech spans across software development, machine learning,
-                and data analytics. I thrive on tackling complex problems and transforming
-                ideas into functional, elegant applications.
-              </p>
-              <p>
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to team projects, or working on personal ventures that
-                push the boundaries of what's possible.
-              </p>
-            </div>
-
             {/* Highlights Grid */}
             <div className="grid grid-cols-2 gap-4">
               {highlights.map((item, index) => (

@@ -34,7 +34,7 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/chris-tela",
-  linkedin: "https://www.linkedin.com/in/christopher-tela-bb33a0278/",
+  linkedin: "https://www.linkedin.com/in/christopher-tela/",
   gmail: "telachristopher4@gmail.com",
   display: true // Set true to display this section, defaults to false
 };

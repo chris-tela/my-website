@@ -72,6 +72,8 @@ const Hero = () => {
                 2000,
                 'Full-Stack Engineer',
                 2000,
+                'Automation Analyst',
+                2000,
                 'Machine Learning Enthusiast',
                 2000,
                 'Computer Science Student',
@@ -90,9 +92,9 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            Passionate about building innovative solutions and exploring the intersection of
-            software development, AI/ML, and data analytics. Currently pursuing Computer Science
-            at Western University.
+            Software Developer & QA at Trojan Technologies, incoming Automation Analyst Intern at RBC.
+            Passionate about building innovative solutions across full-stack development, AI/ML, and
+            automation. Currently pursuing Honours Computer Science at Western University.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -109,7 +111,7 @@ const Hero = () => {
               Get in Touch
             </a>
             <a
-              href="https://drive.google.com/file/d/1tJECy7j2JGC5eVRkAPwcyPIhqOuWEhC-/view?usp=sharing"
+              href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-secondary flex items-center gap-2"

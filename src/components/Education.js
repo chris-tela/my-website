@@ -12,9 +12,18 @@ const Education = () => {
   const education = {
     school: 'Western University',
     degree: "Bachelor's of Science",
-    major: 'Specialization in Computer Science',
-    duration: 'September 2023 - August 2027',
+    major: "Honour's Specialization in Computer Science",
+    duration: 'September 2023 - April 2028',
     location: 'London, Ontario',
+    gpa: '3.8 / 4.0',
+    honours: [
+      "2023-2024 Dean's Honour List",
+      "2024-2025 Dean's Honour List",
+    ],
+    activities: [
+      'Western Cyber Society',
+      'Western Google Developer Student Club',
+    ],
     courses: [
       { code: 'CS 2210', name: 'Data Structures & Algorithms' },
       { code: 'CS 2211', name: 'Software Tools & Systems Programming' },
@@ -96,7 +105,7 @@ const Education = () => {
                   {education.major}
                 </p>
 
-                <div className="flex flex-wrap gap-4 text-sm text-gray-500 dark:text-gray-400">
+                <div className="flex flex-wrap gap-4 text-sm text-gray-500 dark:text-gray-400 mb-4">
                   <span className="flex items-center gap-2">
                     <FiCalendar className="w-4 h-4" />
                     {education.duration}
@@ -105,7 +114,39 @@ const Education = () => {
                     <FiBook className="w-4 h-4" />
                     {education.location}
                   </span>
+                  {education.gpa && (
+                    <span className="flex items-center gap-2 font-semibold text-primary-500">
+                      GPA: {education.gpa}
+                    </span>
+                  )}
                 </div>
+
+                {education.honours && (
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    {education.honours.map((honour) => (
+                      <span
+                        key={honour}
+                        className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400"
+                      >
+                        <FiAward className="w-3 h-3" />
+                        {honour}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                {education.activities && (
+                  <div className="flex flex-wrap gap-2">
+                    {education.activities.map((activity) => (
+                      <span
+                        key={activity}
+                        className="px-3 py-1 rounded-full text-xs font-medium bg-gray-100 dark:bg-dark-200 text-gray-600 dark:text-gray-400"
+                      >
+                        {activity}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           </motion.div>
@@ -145,7 +186,7 @@ const Education = () => {
             {[
               { label: 'Year', value: '3rd Year' },
               { label: 'Focus', value: 'Software Dev' },
-              { label: 'Expected', value: '2027' },
+              { label: 'Expected', value: '2028' },
             ].map((item, index) => (
               <motion.div
                 key={item.label}

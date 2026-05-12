@@ -7,6 +7,7 @@ import {
   SiTypescript, SiPostgresql, SiScikitlearn, SiFastapi, SiNextdotjs,
   SiTailwindcss
 } from 'react-icons/si';
+import { FaLeaf } from 'react-icons/fa';
 import nuzlockeImg from '../assets/images/nuzlocke.jpg';
 import nhlWordleImg from '../assets/images/nhlwordle.png';
 import carelinkImg from '../assets/images/carelink.png';
@@ -21,12 +22,33 @@ const Projects = () => {
 
   const projects = [
     {
+      title: 'CareLink',
+      description: 'An offline-focused referral tracking system for rural healthcare. Built with offline-first sync (RxDB/CouchDB), OCR scanning, and kanban referral management. 2nd place at Spark x Western Developers Society 2026 Hackathon.',
+      image: carelinkImg,
+      tags: ["Next.js", "Tailwind", "TypeScript", "React", "CouchDB", "IndexedDB", "Groq API"],
+      tech: [SiNextdotjs, SiTailwindcss, SiTypescript, FaReact, FaDatabase, FaRobot],
+      github: 'https://github.com/kayroye/CareLink',
+      category: 'fullstack',
+      featured: true,
+    },
+    {
+      title: 'EcoSentinel',
+      description: 'An AI + IoT solution to predict and prevent agriculture disasters like wildfires using satellite and sensor data. Built at TELUS AI Hackathon.',
+      image: null,
+      tags: ['Python', 'AI', 'IoT', 'Satellite Data'],
+      tech: [FaPython, FaRobot, FaLeaf],
+      github: 'https://github.com/kayroye/EcoSentinel',
+      category: 'ml',
+      featured: true,
+    },
+    {
       title: 'Pokemon Nuzlocke Tracker',
       description: 'A comprehensive web application for tracking Pokemon Nuzlocke challenge runs. Features include team management, encounter logging, and progress visualization.',
       image: nuzlockeImg,
       tags: ['TypeScript', 'React', 'PostgreSQL', 'Python'],
       tech: [SiTypescript, FaReact, SiPostgresql, FaPython],
-      github: 'https://github.com/chris-tela/nuzlocke-tracker',
+      github: 'https://github.com/chris-tela/nuzlocke-tracker-public',
+      live: 'https://nuzlify.com',
       category: 'fullstack',
       featured: true,
     },
@@ -50,22 +72,12 @@ const Projects = () => {
       category: 'ml',
       featured: true,
     },
-    {
-      title: 'CareLink',
-      description: 'A application for managing healthcare coordination in remote Canadian areas. 2nd place at the 2025 Spark x Western Developer\'s Society Hackathon.',
-      image: carelinkImg,
-      tags: ["Next.js", "Tailwind", "TypeScript", "React", "CouchDB", "IndexedDB", "Groq API"],
-      tech: [SiNextdotjs, SiTailwindcss, SiTypescript, FaReact, FaDatabase, FaDatabase, FaRobot],
-      category: 'fullstack',
-      featured: true,
-    }
   ];
 
   const filters = [
     { id: 'all', label: 'All Projects' },
     { id: 'fullstack', label: 'Full Stack' },
-    { id: 'ml', label: 'Machine Learning' },
-    { id: 'algorithms', label: 'Algorithms' },
+    { id: 'ml', label: 'ML / AI' },
   ];
 
   const filteredProjects = filter === 'all'
@@ -157,88 +169,93 @@ const Projects = () => {
                 layout
                 className="group"
               >
-                <div className="h-full glass-card overflow-hidden hover:shadow-2xl transition-all duration-300">
-                  {/* Project Image or Placeholder */}
-                  <div className="relative h-48 bg-gradient-to-br from-primary-500/20 to-accent-500/20 overflow-hidden">
-                    {project.featured && (
-                      <div className="absolute top-4 left-4 z-10">
-                        <span className="px-3 py-1 text-xs font-semibold bg-primary-500 text-white rounded-full">
-                          Featured
-                        </span>
-                      </div>
-                    )}
-                    {project.image ? (
-                      <img
-                        src={project.image}
-                        alt={`${project.title} screenshot`}
-                        className="absolute inset-0 h-full w-full object-cover"
-                        loading="lazy"
-                      />
-                    ) : (
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <FiFolder className="w-16 h-16 text-primary-500/50 group-hover:scale-110 transition-transform" />
-                      </div>
-                    )}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </div>
-
-                  {/* Project Info */}
-                  <div className="p-6">
-                    <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-500 transition-colors">
-                      {project.title}
-                    </h4>
-
-                    <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-3">
-                      {project.description}
-                    </p>
-
-                    {/* Tech Icons */}
-                    <div className="flex items-center gap-3 mb-4">
-                      {project.tech.map((Icon, i) => (
-                        <Icon
-                          key={i}
-                          className="w-5 h-5 text-gray-500 dark:text-gray-400 hover:text-primary-500 transition-colors"
-                        />
-                      ))}
-                    </div>
-
-                    {/* Tags */}
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {project.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="px-2 py-1 text-xs font-medium bg-gray-100 dark:bg-dark-200 text-gray-600 dark:text-gray-400 rounded-md"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-
-                    {/* Links */}
-                    <div className="flex items-center gap-4 pt-4 border-t border-gray-200 dark:border-gray-700">
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
-                      >
-                        <FiGithub className="w-4 h-4" />
-                        View Code
-                      </a>
-                      {project.live && (
-                        <a
-                          href={project.live}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
-                        >
-                          <FiExternalLink className="w-4 h-4" />
-                          Live Demo
-                        </a>
+                <a
+                  href={project.live || project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block h-full cursor-pointer"
+                >
+                  <div className="h-full glass-card overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    {/* Project Image or Placeholder */}
+                    <div className="relative h-48 bg-gradient-to-br from-primary-500/20 to-accent-500/20 overflow-hidden">
+                      {project.featured && (
+                        <div className="absolute top-4 left-4 z-10">
+                          <span className="px-3 py-1 text-xs font-semibold bg-primary-500 text-white rounded-full">
+                            Featured
+                          </span>
+                        </div>
                       )}
+                      {project.image ? (
+                        <img
+                          src={project.image}
+                          alt={`${project.title} screenshot`}
+                          className="absolute inset-0 h-full w-full object-cover"
+                          loading="lazy"
+                        />
+                      ) : (
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <FiFolder className="w-16 h-16 text-primary-500/50 group-hover:scale-110 transition-transform" />
+                        </div>
+                      )}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </div>
+
+                    {/* Project Info */}
+                    <div className="p-6">
+                      <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-500 transition-colors">
+                        {project.title}
+                      </h4>
+
+                      <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-3">
+                        {project.description}
+                      </p>
+
+                      {/* Tech Icons */}
+                      <div className="flex items-center gap-3 mb-4">
+                        {project.tech.map((Icon, i) => (
+                          <Icon
+                            key={i}
+                            className="w-5 h-5 text-gray-500 dark:text-gray-400 group-hover:text-primary-500 transition-colors"
+                          />
+                        ))}
+                      </div>
+
+                      {/* Tags */}
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {project.tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="px-2 py-1 text-xs font-medium bg-gray-100 dark:bg-dark-200 text-gray-600 dark:text-gray-400 rounded-md"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+
+                      {/* Links */}
+                      <div className="flex items-center gap-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                        {project.github && (
+                          <span
+                            onClick={(e) => { e.preventDefault(); window.open(project.github, '_blank'); }}
+                            className="flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                          >
+                            <FiGithub className="w-4 h-4" />
+                            View Code
+                          </span>
+                        )}
+                        {project.live && (
+                          <span
+                            onClick={(e) => { e.preventDefault(); window.open(project.live, '_blank'); }}
+                            className="flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                          >
+                            <FiExternalLink className="w-4 h-4" />
+                            Live Demo
+                          </span>
+                        )}
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </motion.div>
             ))}
           </AnimatePresence>

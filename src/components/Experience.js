@@ -5,6 +5,7 @@ import { FiBriefcase, FiCalendar, FiMapPin } from 'react-icons/fi';
 import trojanLogo from '../assets/images/trojantechnologies.png';
 import wdsLogo from '../assets/images/western_dev_society_logo.jpg';
 import techForSocialImpactLogo from '../assets/images/techforsocialimpact_logo.jpg';
+import rbcLogo from '../assets/images/rbc.png';
 
 const Experience = () => {
   const [ref, inView] = useInView({
@@ -14,39 +15,65 @@ const Experience = () => {
 
   const experiences = [
     {
-      role: 'Software Developer & Test',
+      role: 'Automation Analyst',
+      company: 'RBC (Royal Bank of Canada)',
+      location: 'Toronto, ON',
+      date: 'May 2026 - August 2026',
+      description: 'Developing automated end-to-end UI test suites for consumer banking credit card offer flows.',
+      logo: rbcLogo,
+      highlights: [
+        'Developed and maintained automated end-to-end UI test suites for consumer banking credit card offer flows using Playwright and TypeScript',
+        'Collaborated with QA analysts and developers to identify and validate UI defects, implementing automated regression testing workflows',
+      ],
+      color: 'from-blue-600 to-blue-800',
+    },
+    {
+      role: 'Software Developer & QA Intern',
       company: 'Trojan Technologies',
       location: 'London, ON',
-      date: 'April 2025 - Present',
-      description: 'Creating innovative software solutions focused on automation and internal software testing tools.',
+      date: 'May 2025 - May 2026',
+      description: 'Building test automation frameworks and optimizing CI workflows for hardware product validation.',
       logo: trojanLogo,
       highlights: [
-        'Developed custom automation tool using C# and WPF to streamline product testing process',
-        'Optimized CI/CD workflows using Jenkins for build verification and test coverage tracking',
-        'Implemented and debugged Modbus RTU communication protocols (RS-232/RS-485)',
+        'Designed and implemented a C# test automation framework for hardware scripting, integrating communication protocols',
+        'Utilized Docker to containerize and execute hardware test workflows, ensuring consistent, isolated environments',
+        'Optimized CI workflows using Jenkins to include code linting, build verification, and test coverage tracking',
       ],
       color: 'from-blue-500 to-cyan-500',
     },
     {
-      role: 'Full-Stack Developer',
-      company: "Western Developer's Society",
+      role: 'Web Developer',
+      company: 'SKI.Education Network',
+      location: 'Toronto, ON',
+      date: 'January 2026 - March 2026',
+      description: 'Built web solutions for an education services company connecting students with international universities.',
+      logo: null,
+      highlights: [
+        'Developed and maintained web applications for education services platform',
+        'Worked on student-facing interfaces for admission counseling and support services',
+      ],
+      color: 'from-teal-500 to-emerald-500',
+    },
+    {
+      role: 'Full-Stack Engineer',
+      company: "Western Developers Society",
       location: 'London, ON',
       date: 'September 2024 - April 2025',
-      description: 'Developed a Council Management application to automate meeting processes.',
+      description: 'Developed a council management application to automate speaking order, attendance tracking, and voting processes.',
       logo: wdsLogo,
       highlights: [
-        'Designed and implemented full-stack solution using React Native, Express, Node.js, and SQL',
-        'Integrated dynamic backend with complete database for secure data handling',
-        'Collaborated with cross-functional team using Agile methodologies',
+        'Designed and implemented full-stack solution using React Native, Express, Node.js, SQL, and JavaScript',
+        'Contributed to infrastructure management, optimizing server and API performance',
+        'Collaborated with a team for seamless mobile and web interactions',
       ],
       color: 'from-purple-500 to-pink-500',
     },
     {
-      role: 'Back-End Developer',
-      company: 'Western Tech for Social Impact',
+      role: 'Software Developer',
+      company: 'Tethos Association',
       location: 'London, ON',
       date: 'September 2024 - April 2025',
-      description: 'Built a Social Service Accessibility application for accessing vital community resources.',
+      description: 'Contributed to software development projects for social impact initiatives.',
       logo: techForSocialImpactLogo,
       highlights: [
         'Integrated third-party APIs for real-time data updates on service hours and capacity',
@@ -134,12 +161,12 @@ const Experience = () => {
               >
                 <div className={`flex items-start gap-4 ${index % 2 === 0 ? 'md:flex-row-reverse md:text-left' : ''}`}>
                   {/* Company Icon */}
-                  <div className="shrink-0 w-12 h-12 flex items-center justify-center">
+                  <div className="shrink-0 w-16 h-16 flex items-center justify-center">
                     {exp.logo ? (
                       <img
                         src={exp.logo}
                         alt={`${exp.company} logo`}
-                        className="w-10 h-10 object-contain drop-shadow-sm"
+                        className="w-14 h-14 object-contain drop-shadow-sm"
                         loading="lazy"
                       />
                     ) : (
