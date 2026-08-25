@@ -48,12 +48,12 @@ const skillsSection = {
     emoji(
       "⚡ Developing full-scale solutions for real-world problems"
     ),
-    emoji("⚡ Proficient in Python, Java, C/C++, SQL, JavaScript, React, Node.js, Numpy, Pandas, and Matplotlib"),
+    emoji("⚡ Proficient in Python, TypeScript, JavaScript, React, Java, C#, C/C++, SQL, and Node.js"),
     emoji(
-      "⚡ Experienced in developing full-stack applications using in-demand languages, as well as integrating third-party APIs"
+      "⚡ Experienced in full-stack development, test automation (Playwright, Selenium, xUnit), and CI/CD pipelines"
     ),
     emoji(
-      "⚡ Strong foundation in statistical analysis, hypothesis testing, and data visualization to support data-driven decision-making"
+      "⚡ Building with modern stacks including Next.js, FastAPI, Supabase, Docker, and Kubernetes"
     )
   ],
 
@@ -111,8 +111,8 @@ const educationInfo = {
     {
       schoolName: "Western University",
       logo: require("./assets/images/western_university.png"),
-      subHeader: "Bachelor's of Science, Specialization in Computer Science",
-      duration: "September 2023 - August 2027",
+      subHeader: "Bachelor of Science, Honours Specialization in Computer Science",
+      duration: "September 2023 - April 2028",
       desc: "Relevant Courses:",
       descBullets: [
         "COMPSCI 2210: DATA STRUCTURES & ALGORITHMS",
@@ -141,15 +141,15 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Developer & Test",
+      role: "Software Developer and QA Intern",
       company: "Trojan Technologies",
       companylogo: require("./assets/images/trojantechnologies.png"),
-      date: "April 2025 – Present",
-      desc: "Working on creating innovative software solutions to improve the efficiency of the company's products with a focus on automation and internal software testing tools",
+      date: "May 2025 – May 2026",
+      desc: "Built automation frameworks and CI/CD pipelines for hardware product validation",
       descBullets: [
-        "Developed a custom automation tool using C# and WPF to streamline the product testing process, encouraging automation of testing tasks",
-        "Optimized CI/CD workflows using Jenkins to include build verification and test coverage tracking, reducing regression issues and deployment downtime",
-        "Implemented and debugged Modbus RTU communication protocols (RS-232/RS-485) for reliable hardware-software interfacing"
+        "Cut initial hardware testing time by 60% with a C# automation framework integrating Modbus RTU, RS232/RS485, TCP, and MQTT device protocols",
+        "Built and administered Jenkins CI/CD pipelines gating merges on xUnit test runs, linting, and build verification with 80% coverage",
+        "Automated infrastructure provisioning through the Proxmox VE API, cloning LXC containers and managing test environments"
       ]
     },
     {
@@ -217,7 +217,7 @@ const bigProjects = {
     {
       image: require("./assets/images/nuzlocke.jpg"),
       projectName: "Pokemon Nuzlocke Tracker",
-      projectDesc: "A web application that allows you to track your Pokemon Nuzlocke journey. The application is built using Python as the backend, PostgreSQL & SQLite as the database, and React as the frontend. This project is still being built and will eventually be deployed!",
+      projectDesc: "A full-stack Nuzlocke run tracker with 1,500+ users and 15,000+ page views. Features JWT session handling for Google OAuth, offline-first functionality using IndexedDB, and automatic sync on reconnect.",
       footerLink: [
         {
           name: "Visit Github",

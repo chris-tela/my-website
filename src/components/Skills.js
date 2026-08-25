@@ -3,13 +3,14 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import {
   FaReact, FaNodeJs, FaPython, FaJava, FaGitAlt, FaHtml5, FaDocker,
-  FaChartLine, FaChartBar, FaAws
+  FaChartLine, FaChartBar, FaAws, FaTheaterMasks
 } from 'react-icons/fa';
 import {
   SiJavascript, SiTypescript, SiPostgresql, SiMongodb, SiTailwindcss,
   SiPandas, SiNumpy, SiScikitlearn, SiCplusplus, SiDotnet,
   SiGooglecloud, SiJenkins, SiPostman, SiFastapi, SiFlask, SiLinux,
-  SiJira, SiKubernetes, SiSelenium, SiConfluence
+  SiJira, SiKubernetes, SiSelenium, SiConfluence, SiNextdotjs,
+  SiSupabase, SiVercel, SiShadcnui
 } from 'react-icons/si';
 
 const Skills = () => {
@@ -35,33 +36,38 @@ const Skills = () => {
     {
       title: 'Developer Tools',
       skills: [
-        { name: 'Jira', icon: SiJira, color: '#0052CC' },
-        { name: 'Jenkins', icon: SiJenkins, color: '#D24939' },
-        { name: 'Linux', icon: SiLinux, color: '#FCC624' },
         { name: 'Git', icon: FaGitAlt, color: '#F05032' },
-        { name: 'Postman', icon: SiPostman, color: '#FF6C37' },
+        { name: 'Docker', icon: FaDocker, color: '#2496ED' },
         { name: 'Kubernetes', icon: SiKubernetes, color: '#326CE5' },
+        { name: 'Jenkins', icon: SiJenkins, color: '#D24939' },
+        { name: 'Vercel', icon: SiVercel, color: '#000000' },
         { name: 'AWS', icon: FaAws, color: '#FF9900' },
         { name: 'Google Cloud', icon: SiGooglecloud, color: '#4285F4' },
-        { name: 'Power BI', icon: FaChartBar, color: '#F2C811' },
-        { name: 'Selenium', icon: SiSelenium, color: '#43B02A' },
+        { name: 'Postman', icon: SiPostman, color: '#FF6C37' },
+        { name: 'Jira', icon: SiJira, color: '#0052CC' },
         { name: 'Confluence', icon: SiConfluence, color: '#172B4D' },
-        { name: 'Docker', icon: FaDocker, color: '#2496ED' },
+        { name: 'Power BI', icon: FaChartBar, color: '#F2C811' },
+        { name: 'Linux', icon: SiLinux, color: '#FCC624' },
       ],
     },
     {
       title: 'Libraries & Frameworks',
       skills: [
         { name: 'React', icon: FaReact, color: '#61DAFB' },
+        { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
         { name: 'Node.js', icon: FaNodeJs, color: '#339933' },
         { name: 'FastAPI', icon: SiFastapi, color: '#009688' },
         { name: 'Flask', icon: SiFlask, color: '#000000' },
-        { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
+        { name: 'Playwright', icon: FaTheaterMasks, color: '#2EAD33' },
+        { name: 'Selenium', icon: SiSelenium, color: '#43B02A' },
         { name: 'Tailwind', icon: SiTailwindcss, color: '#06B6D4' },
+        { name: 'shadcn/ui', icon: SiShadcnui, color: '#000000' },
+        { name: 'Supabase', icon: SiSupabase, color: '#3FCF8E' },
+        { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
         { name: 'NumPy', icon: SiNumpy, color: '#013243' },
         { name: 'Pandas', icon: SiPandas, color: '#150458' },
-        { name: 'Matplotlib', icon: FaChartLine, color: '#11557C' },
         { name: 'Scikit-learn', icon: SiScikitlearn, color: '#F7931E' },
+        { name: 'Matplotlib', icon: FaChartLine, color: '#11557C' },
       ],
     },
   ];
@@ -152,9 +158,9 @@ const Skills = () => {
           transition={{ delay: 0.5 }}
         >
           {[
-            { number: '20+', label: 'Technologies' },
+            { number: '25+', label: 'Technologies' },
             { number: '5+', label: 'Work Experiences' },
-            { number: '3rd', label: 'Year CS Student' },
+            { number: '4th', label: 'Year CS Student' },
           ].map((stat, index) => (
             <motion.div
               key={stat.label}

@@ -7,7 +7,7 @@ import {
   SiTypescript, SiPostgresql, SiScikitlearn, SiFastapi, SiNextdotjs,
   SiTailwindcss
 } from 'react-icons/si';
-import { FaLeaf } from 'react-icons/fa';
+import { FaLeaf, FaGamepad } from 'react-icons/fa';
 import nuzlockeImg from '../assets/images/nuzlocke.jpg';
 import nhlWordleImg from '../assets/images/nhlwordle.png';
 import carelinkImg from '../assets/images/carelink.png';
@@ -22,8 +22,19 @@ const Projects = () => {
 
   const projects = [
     {
+      title: 'Answer Me This',
+      description: 'A browser-based party game in the vein of Jackbox/Quiplash where players join rooms from their phones using a 4-character code while a shared host screen displays the game. Built with a server-driven phase machine and real-time sync.',
+      image: null,
+      tags: ['Next.js', 'TypeScript', 'Convex', 'React', 'shadcn/ui', 'Tailwind'],
+      tech: [SiNextdotjs, SiTypescript, FaReact, SiTailwindcss, FaGamepad],
+      github: 'https://github.com/kayroye/answermethis',
+      live: 'https://answermethis.vercel.app',
+      category: 'fullstack',
+      featured: true,
+    },
+    {
       title: 'CareLink',
-      description: 'An offline-focused referral tracking system for rural healthcare. Built with offline-first sync (RxDB/CouchDB), OCR scanning, and kanban referral management. 2nd place at Spark x Western Developers Society 2026 Hackathon.',
+      description: 'An offline-first progressive web app to track patient referrals in rural clinics with unreliable connectivity. Earned 2nd place at the Spark 2026 Hackathon competing against 47 teams. Integrates LLaMA 4 Vision via Groq API for OCR on photographed referrals.',
       image: carelinkImg,
       tags: ["Next.js", "Tailwind", "TypeScript", "React", "CouchDB", "IndexedDB", "Groq API"],
       tech: [SiNextdotjs, SiTailwindcss, SiTypescript, FaReact, FaDatabase, FaRobot],
@@ -43,10 +54,10 @@ const Projects = () => {
     },
     {
       title: 'Pokemon Nuzlocke Tracker',
-      description: 'A comprehensive web application for tracking Pokemon Nuzlocke challenge runs. Features include team management, encounter logging, and progress visualization.',
+      description: 'A full-stack Nuzlocke run tracker with 1,500+ users and 15,000+ page views. Features JWT session handling for Google OAuth, offline-first functionality using IndexedDB with automatic sync on reconnect.',
       image: nuzlockeImg,
-      tags: ['TypeScript', 'React', 'PostgreSQL', 'Python'],
-      tech: [SiTypescript, FaReact, SiPostgresql, FaPython],
+      tags: ['Python', 'FastAPI', 'React', 'TypeScript', 'Supabase', 'IndexedDB'],
+      tech: [SiTypescript, FaReact, SiPostgresql, FaPython, SiFastapi],
       github: 'https://github.com/chris-tela/nuzlocke-tracker-public',
       live: 'https://nuzlify.com',
       category: 'fullstack',

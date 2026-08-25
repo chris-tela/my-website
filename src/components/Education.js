@@ -12,10 +12,10 @@ const Education = () => {
   const education = {
     school: 'Western University',
     degree: "Bachelor's of Science",
-    major: "Honour's Specialization in Computer Science",
+    major: "Honours Specialization in Computer Science",
     duration: 'September 2023 - April 2028',
     location: 'London, Ontario',
-    gpa: '3.8 / 4.0',
+    gpa: '3.70 / 4.00',
     honours: [
       "2023-2024 Dean's Honour List",
       "2024-2025 Dean's Honour List",
@@ -184,7 +184,7 @@ const Education = () => {
             className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-6"
           >
             {[
-              { label: 'Year', value: '3rd Year' },
+              { label: 'Year', value: '4th Year' },
               { label: 'Focus', value: 'Software Dev' },
               { label: 'Expected', value: '2028' },
             ].map((item, index) => (

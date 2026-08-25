@@ -72,7 +72,7 @@ const Hero = () => {
                 2000,
                 'Full-Stack Engineer',
                 2000,
-                'Automation Analyst',
+                'Automation Engineer',
                 2000,
                 'Machine Learning Enthusiast',
                 2000,
@@ -92,9 +92,9 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            Software Developer & QA at Trojan Technologies, incoming Automation Analyst Intern at RBC.
-            Passionate about building innovative solutions across full-stack development, AI/ML, and
-            automation. Currently pursuing Honours Computer Science at Western University.
+            Recent Automation Engineer Intern at RBC, previously Software Developer & QA at Trojan Technologies.
+            Passionate about building innovative solutions across full-stack development, test automation, and
+            AI/ML. Currently pursuing Honours Computer Science at Western University.
           </motion.p>
 
           {/* CTA Buttons */}

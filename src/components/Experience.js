@@ -15,15 +15,16 @@ const Experience = () => {
 
   const experiences = [
     {
-      role: 'Automation Analyst',
+      role: 'Automation Engineer Intern',
       company: 'RBC (Royal Bank of Canada)',
       location: 'Toronto, ON',
       date: 'May 2026 - August 2026',
-      description: 'Developing automated end-to-end UI test suites for consumer banking credit card offer flows.',
+      description: 'Built automated API validation and E2E test suites for consumer banking credit card offer flows.',
       logo: rbcLogo,
       highlights: [
-        'Developed and maintained automated end-to-end UI test suites for consumer banking credit card offer flows using Playwright and TypeScript',
-        'Collaborated with QA analysts and developers to identify and validate UI defects, implementing automated regression testing workflows',
+        'Built an automated API validation suite covering authentication, third-party eligibility verification, and credit decisioning endpoints for RBC\'s consumer banking platform',
+        'Engineered an AI test generation pipeline integrating MCP server connections to autonomously parse Jira user stories, generate comprehensive test cases, and publish documentation to Confluence, reducing manual QA labour by a projected 70%',
+        'Extended an enterprise Playwright/TypeScript E2E suite with over 20 critical-path test scenarios encompassing 100+ individual validations across consumer credit card offer flows',
       ],
       color: 'from-blue-600 to-blue-800',
     },
@@ -35,9 +36,9 @@ const Experience = () => {
       description: 'Building test automation frameworks and optimizing CI workflows for hardware product validation.',
       logo: trojanLogo,
       highlights: [
-        'Designed and implemented a C# test automation framework for hardware scripting, integrating communication protocols',
-        'Utilized Docker to containerize and execute hardware test workflows, ensuring consistent, isolated environments',
-        'Optimized CI workflows using Jenkins to include code linting, build verification, and test coverage tracking',
+        'Cut initial hardware testing time by 60% with a C# automation framework integrating Modbus RTU, RS232/RS485, TCP, and MQTT device protocols for product validation',
+        'Built and administered Jenkins CI/CD pipelines on a Windows runner, gating merges on xUnit test runs, linting, and build verification with 80% coverage tracked through Coverlet',
+        'Automated infrastructure provisioning through the Proxmox VE API, cloning LXC containers and managing a pool of test environments that Jenkins pipelines allocated per build',
       ],
       color: 'from-blue-500 to-cyan-500',
     },
