@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Analytics } from '@vercel/analytics/react';
+import rbcLogo from './assets/images/rbc.png';
+import trojanLogo from './assets/images/trojantechnologies.png';
+import riipenLogo from './assets/images/riipen.svg';
+import wdsLogo from './assets/images/western_dev_society_logo.jpg';
+import tethosLogo from './assets/images/techforsocialimpact_logo.jpg';
 
 const SECTIONS = [
   { id: 'intro', label: 'who', color: 'oklch(0.55 0.19 250)' },
@@ -131,6 +136,9 @@ function App() {
           {/* RBC — featured */}
           <div className="work-card work-card--featured">
             <div>
+              <div className="work-card__logo">
+                <img src={rbcLogo} alt="RBC logo" />
+              </div>
               <div className="work-card__label-featured">MOST RECENT</div>
               <div className="work-card__dates" style={{ marginTop: 6 }}>
                 summer 2026
@@ -159,10 +167,15 @@ function App() {
 
           {/* Trojan Technologies */}
           <div className="work-card">
-            <div className="work-card__dates">
-              may 2025 – may 2026
-              <br />
-              12 months
+            <div>
+              <div className="work-card__logo">
+                <img src={trojanLogo} alt="Trojan Technologies logo" />
+              </div>
+              <div className="work-card__dates">
+                may 2025 – may 2026
+                <br />
+                12 months
+              </div>
             </div>
             <div>
               <div className="work-card__title">
@@ -182,12 +195,17 @@ function App() {
             </div>
           </div>
 
-          {/* SKI.Education */}
+          {/* Riipen */}
           <div className="work-card">
-            <div className="work-card__dates">jan – mar 2026</div>
+            <div>
+              <div className="work-card__logo">
+                <img src={riipenLogo} alt="Riipen logo" />
+              </div>
+              <div className="work-card__dates">jan – mar 2026</div>
+            </div>
             <div>
               <div className="work-card__title">web developer</div>
-              <div className="work-card__company">SKI.EDUCATION NETWORK</div>
+              <div className="work-card__company">RIIPEN</div>
               <p className="work-card__desc">
                 built web solutions for an education platform connecting students
                 with international universities.
@@ -197,7 +215,12 @@ function App() {
 
           {/* Western Developers Society */}
           <div className="work-card">
-            <div className="work-card__dates">sept 2024 – apr 2025</div>
+            <div>
+              <div className="work-card__logo">
+                <img src={wdsLogo} alt="Western Developers Society logo" />
+              </div>
+              <div className="work-card__dates">sept 2024 – apr 2025</div>
+            </div>
             <div>
               <div className="work-card__title">full-stack engineer</div>
               <div className="work-card__company">
@@ -212,7 +235,12 @@ function App() {
 
           {/* Tethos */}
           <div className="work-card">
-            <div className="work-card__dates">sept 2024 – apr 2025</div>
+            <div>
+              <div className="work-card__logo">
+                <img src={tethosLogo} alt="Tethos Association logo" />
+              </div>
+              <div className="work-card__dates">sept 2024 – apr 2025</div>
+            </div>
             <div>
               <div className="work-card__title">software developer</div>
               <div className="work-card__company">TETHOS ASSOCIATION</div>
@@ -256,7 +284,7 @@ function App() {
             <div className="project-featured__name">nuzlocke tracker</div>
             <p className="project-featured__desc">
               a run manager for pokemon players who make the game harder on
-              purpose. 1,500+ users, 15,000+ page views. rules engine, encounter
+              purpose. 3,000+ users. rules engine, encounter
               log, run history.
             </p>
             <div className="project-featured__tags">
@@ -366,9 +394,6 @@ function App() {
               style={{ background: 'oklch(0.6 0.16 155)' }}
             >
               <span className="hobby-card__title">sports</span>
-              <span className="hobby-card__subtitle">
-                HOCKEY / HOOPS / FOOTBALL
-              </span>
             </div>
             <div className="hobby-card__body">
               <div className="hobby-row" style={{ alignItems: 'center' }}>
@@ -399,7 +424,6 @@ function App() {
               }}
             >
               <span className="hobby-card__title">anime</span>
-              <span className="hobby-card__subtitle">ONE EP A NIGHT</span>
             </div>
             <div className="anime-list">
               <div className="anime-row">
@@ -408,7 +432,7 @@ function App() {
                   className="anime-row__status"
                   style={{ color: 'oklch(0.6 0.16 155)' }}
                 >
-                  GOAT
+                  #1
                 </span>
               </div>
               <div className="anime-row">
@@ -417,7 +441,7 @@ function App() {
                   className="anime-row__status"
                   style={{ color: 'oklch(0.55 0.16 55)' }}
                 >
-                  CLASSIC
+                  #2
                 </span>
               </div>
               <div className="anime-row">
@@ -426,7 +450,7 @@ function App() {
                   className="anime-row__status"
                   style={{ color: 'oklch(0.55 0.19 250)' }}
                 >
-                  TOP TIER
+                  #3
                 </span>
               </div>
               <div className="anime-row">
@@ -435,7 +459,7 @@ function App() {
                   className="anime-row__status"
                   style={{ color: 'oklch(0.6 0.2 28)' }}
                 >
-                  CURRENT
+                  #4
                 </span>
               </div>
             </div>
@@ -446,7 +470,6 @@ function App() {
             <div>
               <div className="pokemon-header">
                 <span className="hobby-card__title">pokemon</span>
-                <span className="hobby-card__subtitle">SINCE FOREVER</span>
               </div>
             </div>
             <div className="pokemon-tags">
@@ -474,9 +497,7 @@ function App() {
         </div>
         <div className="sec-num">06 / SAY HI</div>
         <h2 className="sec-heading">
-          no pitch. just
-          <br />
-          the links.
+          get to know me more
         </h2>
         <div className="links-grid">
           <a
