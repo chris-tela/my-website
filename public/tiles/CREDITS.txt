@@ -1,0 +1,11 @@
+Tiles in this folder are cropped from fan-made Gen 3 style tilesets:
+
+about.png, contact.png, hobbies.png, projects.png, resume.png, work.png,
+and the grass, trees, bushes, flowers and signs in atlas.png:
+  ditto209 - Pewter City Tileset (Updated)   https://www.deviantart.com/ditto209
+
+Stone road in atlas.png (grass edge recolored to match):
+  J-Treecko252 - Path Tiles EX Stone Road Grass   https://www.deviantart.com/j-treecko252
+
+Regenerate everything here with scripts/build_tiles.py (needs Pillow + scipy);
+the only edits are white backgrounds made transparent.
