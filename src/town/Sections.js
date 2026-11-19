@@ -15,7 +15,7 @@ const Ext = ({ href, children, className }) => (
 export const JOBS = [
   {
     logo: rbcLogo,
-    role: 'Automation engineer intern',
+    role: 'Automation Engineer Intern',
     company: 'RBC (Royal Bank of Canada)',
     dates: 'Summer 2026, 4 months',
     text: 'Built API validation and end-to-end test suites for consumer credit card flows. Engineered an AI pipeline that generates test cases from Jira stories and publishes docs to Confluence.',
@@ -23,7 +23,7 @@ export const JOBS = [
   },
   {
     logo: trojanLogo,
-    role: 'Software developer and QA intern',
+    role: 'Software Developer and QA Intern',
     company: 'Trojan Technologies',
     dates: 'May 2025 to May 2026, 12 months',
     text: 'Built test automation frameworks and CI/CD pipelines for hardware product validation.',
@@ -31,21 +31,21 @@ export const JOBS = [
   },
   {
     logo: riipenLogo,
-    role: 'Web developer',
+    role: 'Web Developer',
     company: 'Riipen',
     dates: 'January to March 2026',
     text: 'Built web solutions for an education platform connecting students with international universities.',
   },
   {
     logo: wdsLogo,
-    role: 'Full-stack engineer',
+    role: 'Full-Stack Engineer',
     company: 'Western Developers Society',
     dates: 'September 2024 to April 2025',
     text: 'Developed a council management app that automates speaking order, attendance and voting.',
   },
   {
     logo: tethosLogo,
-    role: 'Software developer',
+    role: 'Software Developer',
     company: 'Tethos Association',
     dates: 'September 2024 to April 2025',
     text: 'Integrated real-time APIs and built PostgreSQL schemas for a social services accessibility app.',

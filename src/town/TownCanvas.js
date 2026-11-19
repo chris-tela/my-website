@@ -245,6 +245,8 @@ export default function TownCanvas({ panelOpen, paused, onStand, onFirstMove }) 
 
     const onPointerDown = (e) => {
       if (live.current.paused) return;
+      // Touch users move with the d-pad only; tap-to-walk is mouse/pen only.
+      if (e.pointerType === 'touch') return;
       const rect = canvas.getBoundingClientRect();
       const ratio = canvas.width / rect.width;
       const tx = Math.floor(((e.clientX - rect.left) * ratio + ox) / P / T);

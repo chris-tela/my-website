@@ -76,7 +76,7 @@ function App() {
             where you want to go.
           </span>
           <span className="if-touch">
-            Welcome to Tela Town. Walk with the pad, or tap where you want to go.
+            Welcome to Tela Town. Walk with the pad.
           </span>{' '}
           Step on a doormat to see what's inside.
         </p>

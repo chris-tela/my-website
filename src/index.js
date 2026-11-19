@@ -11,6 +11,14 @@ if (isPro) {
   document.title = 'Christopher Tela | Portfolio';
 }
 
+// An old service worker from a previous version of the site can serve a
+// stale bundle that ignores /portfolio. Remove any that are still installed.
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistrations().then((regs) => {
+    regs.forEach((r) => r.unregister());
+  });
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
